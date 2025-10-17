@@ -13,7 +13,7 @@
     justify-content: space-evenly; 
     align-items: center;
     width: 100%;
-    padding: 0 20px;
+    padding: 18px 361px;
 }
 
 .topbar_item {
@@ -24,6 +24,21 @@
 }
 .page__header{
     flex-shrink: 0;
+    background-color: var(--color-black-1B1B1B);
+    opacity: 0.91;
+}
+.header{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    width: 100%;
+    padding: 40px 360px;
+}
+.header__item{
+    display: flex;
+    align-items: center; 
+    gap: 8px;
+    flex: 0 0 auto;
 }
 .page__content{
     flex-grow: 1;
