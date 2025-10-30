@@ -126,8 +126,10 @@
 
 .page__content1 {
   flex-grow: 1;
-  background: url('images/Content1_background.png');
+  background: url('images/Content1_background2.svg');
   max-height: 487px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .page__content2 {
@@ -145,7 +147,7 @@
 .page__content4 {
   flex-grow: 1;
   background: var(--color-black-181818);
-  height: 841px;
+  margin-bottom: 155px;
 }
 
 .page__content5 {
@@ -345,12 +347,13 @@
 }
 
 .content__item-services {
-  height: 596px;
+  height: auto;
 }
 
 .content__item-services-text {
   /* width: 1607px; */
-  padding: 149px 156px;
+  align-items: flex-start;
+  padding: 149px 156px 70px;
 }
 
 .content__item-servicies-text-title {
@@ -544,13 +547,16 @@
 .content__item-services-content {
   display: flex;
   flex-direction: row;
+  padding-bottom: 152px;
 }
 
 .content__item-whattoexpect {
   display: flex;
   flex-direction: row;
   width: 1292px;
-  height: 462px;
+  height: 622px;
+  padding: 80px 0;
+  gap: 82px;
 }
 
 .content__item-whattoexpect2 {
@@ -689,6 +695,7 @@
   line-height: 148%;
   color: #595566;
 }
+
 .content__contact-image {
 }
 .content__faq {
