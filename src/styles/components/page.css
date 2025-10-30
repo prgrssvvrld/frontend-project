@@ -151,7 +151,7 @@
 .page__content5 {
   flex-grow: 1;
   background: var(--color-white-FFFFFF);
-  height: 848px;
+  margin-bottom: 155px;
 }
 
 .page__footer {
