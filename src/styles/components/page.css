@@ -147,7 +147,7 @@
 .page__content4 {
   flex-grow: 1;
   background: var(--color-black-181818);
-  height: 841px;
+  margin-bottom: 155px;
 }
 
 .page__content5 {
