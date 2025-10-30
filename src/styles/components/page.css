@@ -674,6 +674,19 @@
   color: #181818;
   margin: 0;
 }
-
+.content__contact-data-info-content-text1{
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 116%;
+  color: #181818;
+}
+.content__contact-data-info-content-text2{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148%;
+  color: #595566;
+}
 .content__contact-image {
 }
