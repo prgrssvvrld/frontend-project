@@ -160,10 +160,6 @@
         checkResponsive();
         window.addEventListener('resize', checkResponsive);
 
-        // FAQ toggle functionality
-        document.querySelectorAll('.faq__block').forEach((block) => {
-          block.addEventListener('click', function () {
-            const isActive = this.classList.contains('faq__block--active');
 
             // Close all other FAQ blocks
             document.querySelectorAll('.faq__block').forEach((otherBlock) => {

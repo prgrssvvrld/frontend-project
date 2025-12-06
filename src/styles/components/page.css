@@ -722,9 +722,6 @@ img {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.faq__block--active .faq__block-text {
-  color: var(--color-green-4EAF4E);
-}
 
 .faq__block-text {
   font-family: var(--second-family);
