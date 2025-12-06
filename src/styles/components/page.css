@@ -426,22 +426,6 @@
   background: #181818;
 }
 
-.item__services-content-block3 {
-  border-radius: 20px;
-  padding: 45px 39px;
-  width: 377px;
-  height: 279px;
-  background: #ebebeb;
-}
-
-.item__services-content-block4 {
-  border-radius: 20px;
-  padding: 37px 39px;
-  width: 377px;
-  height: 271px;
-  background: #ebebeb;
-}
-
 .item__services-text3 {
   font-family: var(--second-family);
   font-weight: 600;
