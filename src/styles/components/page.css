@@ -577,8 +577,10 @@
 .clientlogos {
   display: flex;
   flex-direction: row;
-  gap: 132px;
-  padding: 56px 87px;
+  gap: 50px;
+  padding-left: 60px;
+  padding-bottom: 56px;
+  opacity: 0.51;
 }
 
 .video {
