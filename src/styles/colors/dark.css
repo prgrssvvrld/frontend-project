@@ -1,6 +1,84 @@
 :root {
-  color-scheme: dark;
+  /* Основные цвета темной темы */
+  --color-black-181818: #E0E0E0;
+  --color-black-1B1B1B: #2D2D2D;
+  --color-black-353535: #E0E0E0;
+  --color-white-FFFFFF: #121212;
+  --color-white-F5F5F5: #1A1A1A;
+  --color-gray-595566: #A0A0A0;
+  --color-gray-515151: #808080;
+  --color-gray-DADADA: #333333;
+  --color-green-4EAF4E: #4EAF4E;
+  --color-green-5AB612: #5AB612;
+  --color-yellow-FFCC4A: #FFCC4A;
+  --color-yellow-FFC42B: #FFC42B;
+  
+  /* Цвета фона */
+  --bg-page: #121212;
+  --bg-content1: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/Content1_background2.svg');
+  --bg-content2: #1A1A1A;
+  --bg-content3: #121212;
+  --bg-content4: #000000;
+  --bg-content5: #121212;
+  --bg-footer: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('public/images/footer_background.png');
+  --bg-header: #2D2D2D;
+  
+  /* Цвета текста */
+  --text-primary: #E0E0E0;
+  --text-secondary: #A0A0A0;
+  --text-light: #E0E0E0;
+  --text-dark: #121212;
+  
+  /* Цвета компонентов */
+  --bg-services-block: #2D2D2D;
+  --bg-services-block-reversed: #000000;
+  --bg-faq: #1A1A1A;
+  --border-faq: #333333;
+  
+  /* Цвета SVG */
+  --svg-color-primary: #E0E0E0;
+  --svg-color-inverse: #121212;
+  --svg-color-accent: #FFCC4A;
+}
 
-  --color-primary: var(--color-black);
-  --color-secondary: var(--color-white);
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Специфичные стили для темной темы */
+[data-theme="dark"] .page__content1 {
+  background: var(--bg-content1);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+[data-theme="dark"] .page__footer {
+  background: var(--bg-footer);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+[data-theme="dark"] .banner2 {
+  background: rgba(30, 30, 30, 0.85);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .services__content-block {
+  background: var(--bg-services-block);
+}
+
+[data-theme="dark"] .services__content-block--reversed {
+  background: var(--bg-services-block-reversed);
+}
+
+[data-theme="dark"] .faq {
+  background: var(--bg-faq);
+}
+
+[data-theme="dark"] .faq__block,
+[data-theme="dark"] .faq__block1,
+[data-theme="dark"] .faq__block-text2 {
+  border-bottom-color: var(--border-faq);
 }
