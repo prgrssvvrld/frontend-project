@@ -159,21 +159,6 @@
 
         checkResponsive();
         window.addEventListener('resize', checkResponsive);
-
-
-            // Close all other FAQ blocks
-            document.querySelectorAll('.faq__block').forEach((otherBlock) => {
-              if (otherBlock !== this) {
-                otherBlock.classList.remove('faq__block--active');
-              }
-            });
-
-            // Toggle current block
-            if (!isActive) {
-              this.classList.add('faq__block--active');
-            }
-          });
-        });
       });
     </script>
   </head>
