@@ -409,7 +409,7 @@
   justify-content: center;
 }
 
-.item__services-content-block1 {
+.item__services-content-block {
   border-radius: 20px;
   padding: 44px 35px;
   width: 345px;
@@ -417,8 +417,7 @@
   background: #ebebeb;
 
 }
-
-.item__services-content-block2 {
+.item__services-content-block--reversed{
   border-radius: 20px;
   padding: 45px 33px;
   width: 379px;
