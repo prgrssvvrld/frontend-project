@@ -1,6 +1,48 @@
 :root {
-  color-scheme: light;
+  /* Основные цвета светлой темы */
+  --color-black-181818: #181818;
+  --color-black-1B1B1B: #1B1B1B;
+  --color-black-353535: #353535;
+  --color-white-FFFFFF: #FFFFFF;
+  --color-white-F5F5F5: #F5F5F5;
+  --color-gray-595566: #595566;
+  --color-gray-515151: #515151;
+  --color-gray-DADADA: #DADADA;
+  --color-green-4EAF4E: #4EAF4E;
+  --color-green-5AB612: #5AB612;
+  --color-yellow-FFCC4A: #FFCC4A;
+  --color-yellow-FFC42B: #FFC42B;
+  
+  /* Цвета фона */
+  --bg-page: #FFFFFF;
+  --bg-content1: url('images/Content1_background2.svg');
+  --bg-content2: #F5F5F5;
+  --bg-content3: #FFFFFF;
+  --bg-content4: #181818;
+  --bg-content5: #FFFFFF;
+  --bg-footer: url('public/images/footer_background.png');
+  --bg-header: #1B1B1B;
+  
+  /* Цвета текста */
+  --text-primary: #181818;
+  --text-secondary: #595566;
+  --text-light: #FFFFFF;
+  --text-dark: #181818;
+  
+  /* Цвета компонентов */
+  --bg-services-block: #EBEBEB;
+  --bg-services-block-reversed: #181818;
+  --bg-faq: #F5F5F5;
+  --border-faq: #DADADA;
+  
+  /* Цвета SVG */
+  --svg-color-primary: #181818;
+  --svg-color-inverse: #FFFFFF;
+  --svg-color-accent: #FFCC4A;
+}
 
-  --color-primary: var(--color-white);
-  --color-secondary: var(--color-black);
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
 }
