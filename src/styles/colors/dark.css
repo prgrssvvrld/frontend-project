@@ -2,8 +2,8 @@
   /* Основные цвета темной темы */
   --color-black-181818: #E0E0E0;
   --color-black-1B1B1B: #2D2D2D;
-  --color-black-353535: #E0E0E0;
-  --color-white-FFFFFF: #121212;
+  --color-black-353535: #121212; /* Изменено на более темный для текста телефона */
+  --color-white-FFFFFF: #A0A0A0; /* Изменено на более серый для кнопки телефона */
   --color-white-F5F5F5: #1A1A1A;
   --color-gray-595566: #A0A0A0;
   --color-gray-515151: #808080;
@@ -15,7 +15,7 @@
   
   /* Цвета фона */
   --bg-page: #121212;
-  --bg-content1: url('images/Content1_background2.svg');
+  --bg-content1: url('../../../public/images/Content1_background2.svg');
   --bg-content2: #1A1A1A;
   --bg-content3: #121212;
   --bg-content4: #000000;
@@ -54,6 +54,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   filter: none !important;
+}
+
+[data-theme="dark"] .banner-text {
+  color: var(--text-dark);
 }
 
 [data-theme="dark"] .page__footer {
