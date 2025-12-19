@@ -129,7 +129,6 @@ img {
   height: 19px;
 }
 
-/* Header */
 .page__header {
   flex-shrink: 0;
   background-color: var(--bg-header);
@@ -273,7 +272,7 @@ img {
   color: var(--text-primary);
 }
 
-.banner3 {
+.banner__header {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 50px;
@@ -305,7 +304,7 @@ img {
   flex-wrap: wrap;
 }
 
-.services__text-title-width {
+.services__text-width {
   flex: 1;
   min-width: 300px;
 }
@@ -437,7 +436,7 @@ img {
   flex-wrap: wrap;
 }
 
-.whattoexpect2 {
+.whattoexpect__width {
   flex: 1;
   min-width: 300px;
 }
@@ -450,7 +449,7 @@ img {
   margin-bottom: 10px;
 }
 
-.services__text-header {
+.whattoexpect__text-header {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -461,7 +460,7 @@ img {
   margin: 0;
 }
 
-.services__text-name {
+.whattoexpect__text-name {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 45px;
@@ -470,7 +469,7 @@ img {
   margin-bottom: 20px;
 }
 
-.services__text-story {
+.whattoexpect__text-story {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -479,14 +478,14 @@ img {
   margin-bottom: 30px;
 }
 
-.services__row {
+.whattoexpect__row {
   display: flex;
   align-items: flex-start;
   gap: 15px;
   margin-bottom: 20px;
 }
 
-.services__text-points {
+.whattoexpect__text-points {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 16px;
@@ -591,7 +590,7 @@ img {
   color: var(--text-primary);
 }
 
-.contact__data-info-content-text1 {
+.contact__data-info-content-header {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 45px;
@@ -600,7 +599,7 @@ img {
   margin-bottom: 20px;
 }
 
-.contact__data-info-content-text2 {
+.contact__data-info-content-frameworks {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -953,14 +952,14 @@ img {
     padding: 100px 0;
   }
 
-  .banner3 {
+  .banner__header {
     font-size: 40px;
   }
 
   .services__text-projections,
-  .services__text-name,
+  .whattoexpect__text-name,
   .video__title-text,
-  .contact__data-info-content-text1,
+  .contact__data-info-content-header,
   .faq__text-questions {
     font-size: 36px;
   }
@@ -1056,7 +1055,7 @@ img {
     margin: 0 auto;
   }
 
-  .banner3 {
+  .banner__header {
     font-size: 32px;
   }
 
@@ -1075,7 +1074,7 @@ img {
     gap: 40px;
   }
 
-  .services__row {
+  .whattoexpect__row {
     flex-direction: column;
     text-align: left;
   }
@@ -1159,14 +1158,14 @@ img {
     padding: 0 10px;
   }
 
-  .banner3 {
+  .banner__header {
     font-size: 28px;
   }
 
   .services__text-projections,
-  .services__text-name,
+  .whattoexpect__text-name,
   .video__title-text,
-  .contact__data-info-content-text1,
+  .contact__data-info-content-header,
   .faq__text-questions {
     font-size: 28px;
   }
@@ -1208,14 +1207,14 @@ img {
     padding: 0 8px;
   }
 
-  .banner3 {
+  .banner__header {
     font-size: 24px;
   }
 
   .services__text-projections,
-  .services__text-name,
+  .whattoexpect__text-name,
   .video__title-text,
-  .contact__data-info-content-text1,
+  .contact__data-info-content-header,
   .faq__text-questions {
     font-size: 24px;
   }
