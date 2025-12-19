@@ -47,7 +47,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Специфичные стили для темной темы */
+
 [data-theme="dark"] .page__content1 {
   background: var(--bg-content1);
   background-size: cover;

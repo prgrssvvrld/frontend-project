@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +26,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Typography */
 h1,
 h2,
 h3,
@@ -65,7 +63,6 @@ img {
   display: block;
 }
 
-/* Container */
 .container {
   width: 100%;
   max-width: 1440px;
@@ -73,14 +70,12 @@ img {
   padding: 0 20px;
 }
 
-/* Page layout */
 .page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* Topbar */
 .page__topbar {
   flex-shrink: 0;
   background-color: var(--color-black-181818);
@@ -215,7 +210,6 @@ img {
   flex-shrink: 0;
 }
 
-/* Content sections */
 .page__content1 {
   flex-grow: 1;
   background: var(--bg-content1);
@@ -249,7 +243,6 @@ img {
   padding: 80px 0 155px;
 }
 
-/* Banner */
 .banner {
   padding: 143px 0;
   display: flex;
@@ -257,13 +250,13 @@ img {
   min-height: 487px;
 }
 
-.banner__padding {
+.banner__align {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-.banner1 {
+.banner__radius {
   border-radius: 20px;
   padding: 0 15px;
   background: var(--color-yellow-FFCC4A);
@@ -271,7 +264,7 @@ img {
   margin-bottom: 20px;
 }
 
-.banner2 {
+.banner__padding {
   border-radius: 29px;
   padding: 48px 60px;
   max-width: 465px;
@@ -289,7 +282,7 @@ img {
   color: var(--text-primary);
 }
 
-.banner4 {
+.banner-text {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -300,12 +293,11 @@ img {
   margin: 0;
 }
 
-/* Services */
 .services__text {
   margin-bottom: 70px;
 }
 
-.servicies__text-title {
+.services__text-title {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -313,12 +305,12 @@ img {
   flex-wrap: wrap;
 }
 
-.servicies__text-title-title {
+.services__text-title-width {
   flex: 1;
   min-width: 300px;
 }
 
-.services__text1 {
+.services__text-projections {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 45px;
@@ -327,7 +319,7 @@ img {
   margin-bottom: 20px;
 }
 
-.services__text2 {
+.services__text-projectionsinfo {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -336,7 +328,7 @@ img {
   margin-bottom: 30px;
 }
 
-.servicies__text-title-navigation1 {
+.services__text-title-navigation {
   display: flex;
   gap: 10px;
   margin-top: 20px;
@@ -357,7 +349,6 @@ img {
   height: 70px;
 }
 
-/* Services content grid */
 .services__content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -396,10 +387,10 @@ img {
   height: auto;
 }
 
-.services__text3,
-.services__text5,
-.services__text7,
-.services__text9 {
+.services__text-balancesheet,
+.services__text-incomestatement,
+.services__text-financialplan,
+.services__text-financialratios {
   font-family: var(--second-family);
   font-weight: 600;
   font-size: 25px;
@@ -407,20 +398,20 @@ img {
   margin: 0;
 }
 
-.services__text3,
-.services__text7,
-.services__text9 {
+.services__text-balancesheet,
+.services__text-financialplan,
+.services__text-financialratios {
   color: var(--text-primary);
 }
 
-.services__text5 {
+.services__text-incomestatement {
   color: var(--text-light);
 }
 
-.services__text4,
-.services__text6,
-.services__text8,
-.services__text10 {
+.services__text-balancesheetinfo,
+.services__text-incomeinfo,
+.services__text-information,
+.services__text-ratios {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -428,17 +419,16 @@ img {
   margin: 0;
 }
 
-.services__text4,
-.services__text8,
-.services__text10 {
+.services__text-balancesheetinfo,
+.services__text-information,
+.services__text-ratios {
   color: var(--text-secondary);
 }
 
-.services__text6 {
+.services__text-incomeinfo {
   color: var(--text-light);
 }
 
-/* What to expect */
 .whattoexpect {
   display: flex;
   align-items: center;
@@ -460,7 +450,7 @@ img {
   margin-bottom: 10px;
 }
 
-.services__text11 {
+.services__text-header {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -471,7 +461,7 @@ img {
   margin: 0;
 }
 
-.services__text12 {
+.services__text-name {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 45px;
@@ -480,7 +470,7 @@ img {
   margin-bottom: 20px;
 }
 
-.services__text13 {
+.services__text-story {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -496,7 +486,7 @@ img {
   margin-bottom: 20px;
 }
 
-.services__text14 {
+.services__text-points {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 16px;
@@ -505,7 +495,6 @@ img {
   margin: 0;
 }
 
-/* Client logos */
 .clientlogos {
   display: flex;
   justify-content: center;
@@ -521,7 +510,6 @@ img {
   height: auto;
 }
 
-/* Video section */
 .video {
   padding: 152px 0;
   display: flex;
@@ -568,7 +556,6 @@ img {
   border-radius: 20px;
 }
 
-/* Contact */
 .contact {
   display: flex;
   align-items: center;
@@ -662,7 +649,6 @@ img {
   border-radius: 20px;
 }
 
-/* FAQ */
 .faq {
   background: var(--bg-faq);
   border-radius: 30px;
@@ -671,17 +657,17 @@ img {
   max-width: 1197px;
 }
 
-.faq__padding {
+.faq__padding-width {
   max-width: 725px;
   margin: 0 auto;
 }
 
-.faq__padding1 {
+.faq__padding-align {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.faq__text1 {
+.faq__text-bg {
   background: var(--color-green-4EAF4E);
   border-radius: 20px;
   padding: 0 19px;
@@ -689,7 +675,7 @@ img {
   margin-bottom: 20px;
 }
 
-.faq__text11 {
+.faq__text-font {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -699,7 +685,7 @@ img {
   color: var(--text-light);
 }
 
-.faq__text2 {
+.faq__text-questions {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 45px;
@@ -722,7 +708,6 @@ img {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-
 .faq__block-text {
   font-family: var(--second-family);
   font-weight: 500;
@@ -733,7 +718,7 @@ img {
   margin: 0;
 }
 
-.faq__block-text2 {
+.faq__block-text-black {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -750,7 +735,6 @@ img {
   height: 20px;
 }
 
-/* Footer */
 .page__footer {
   flex-shrink: 0;
   background: var(--bg-footer);
@@ -919,9 +903,6 @@ img {
   margin: 0;
 }
 
-/* Responsive styles */
-
-/* Large desktops */
 @media (max-width: 1440px) {
   .container {
     max-width: 1200px;
@@ -936,7 +917,6 @@ img {
   }
 }
 
-/* Desktops */
 @media (max-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -956,7 +936,6 @@ img {
   }
 }
 
-/* Tablets */
 @media (max-width: 992px) {
   .container {
     max-width: 960px;
@@ -978,11 +957,11 @@ img {
     font-size: 40px;
   }
 
-  .services__text1,
-  .services__text12,
+  .services__text-projections,
+  .services__text-name,
   .video__title-text,
   .contact__data-info-content-text1,
-  .faq__text2 {
+  .faq__text-questions {
     font-size: 36px;
   }
 
@@ -1004,14 +983,12 @@ img {
   }
 }
 
-/* Mobile devices */
 @media (max-width: 768px) {
   .container {
     max-width: 720px;
     padding: 0 15px;
   }
 
-  /* Mobile menu */
   body.menu-open {
     overflow: hidden;
   }
@@ -1074,7 +1051,7 @@ img {
     text-align: center;
   }
 
-  .banner2 {
+  .banner__padding {
     padding: 30px;
     margin: 0 auto;
   }
@@ -1083,7 +1060,7 @@ img {
     font-size: 32px;
   }
 
-  .servicies__text-title {
+  .services__text-title {
     flex-direction: column;
     gap: 30px;
   }
@@ -1176,7 +1153,6 @@ img {
   }
 }
 
-/* Small mobile devices */
 @media (max-width: 576px) {
   .container {
     max-width: 540px;
@@ -1187,18 +1163,18 @@ img {
     font-size: 28px;
   }
 
-  .services__text1,
-  .services__text12,
+  .services__text-projections,
+  .services__text-name,
   .video__title-text,
   .contact__data-info-content-text1,
-  .faq__text2 {
+  .faq__text-questions {
     font-size: 28px;
   }
 
-  .services__text3,
-  .services__text5,
-  .services__text7,
-  .services__text9 {
+  .services__text-balancesheet,
+  .services__text-incomestatement,
+  .services__text-financialplan,
+  .services__text-financialratios {
     font-size: 22px;
   }
 
@@ -1207,7 +1183,7 @@ img {
     padding: 30px 20px;
   }
 
-  .banner1,
+  .banner__radius,
   .whattoexpect__bg,
   .contact__data-text-bg {
     padding: 8px 15px;
@@ -1227,7 +1203,6 @@ img {
   }
 }
 
-/* Extra small mobile devices */
 @media (max-width: 375px) {
   .container {
     padding: 0 8px;
@@ -1237,11 +1212,11 @@ img {
     font-size: 24px;
   }
 
-  .services__text1,
-  .services__text12,
+  .services__text-projections,
+  .services__text-name,
   .video__title-text,
   .contact__data-info-content-text1,
-  .faq__text2 {
+  .faq__text-questions {
     font-size: 24px;
   }
 
@@ -1260,7 +1235,6 @@ img {
   }
 }
 
-/* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -1275,7 +1249,6 @@ img {
   }
 }
 
-/* High contrast mode */
 @media (prefers-contrast: high) {
   :root {
     --color-black-181818: #000000;
@@ -1291,13 +1264,12 @@ img {
   }
 }
 
-/* Print styles */
 @media print {
   .page__topbar,
   .page__header,
   .header__phone,
   .footer__button,
-  .servicies__text-title-navigation1,
+  .services__text-title-navigation,
   #theme-toggle,
   #mobile-menu-button,
   .topbar__social,
@@ -1317,7 +1289,7 @@ img {
     padding: 0;
   }
 
-  .banner2 {
+  .banner__padding {
     background: white !important;
     box-shadow: none !important;
     color: #000000 !important;

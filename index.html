@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AskExperts - Service Single</title>
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,17 +13,13 @@
       rel="stylesheet"
     />
 
-    <!-- Theme CSS -->
     <link rel="stylesheet" href="./src/styles/colors/light.css" id="theme-light" />
     <link rel="stylesheet" href="./src/styles/colors/dark.css" id="theme-dark" disabled />
 
-    <!-- Main CSS -->
     <link rel="stylesheet" href="./src/styles/page.css" />
 
     <script>
-      // Theme toggle functionality
       document.addEventListener('DOMContentLoaded', function () {
-        // Theme toggle button
         const themeToggle = document.createElement('button');
         themeToggle.id = 'theme-toggle';
         themeToggle.innerHTML = '🌙';
@@ -59,7 +54,6 @@
 
         document.body.appendChild(themeToggle);
 
-        // Check for saved theme preference
         const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
         const savedTheme = localStorage.getItem('theme');
 
@@ -86,7 +80,6 @@
           }
         }
 
-        // Apply initial theme
         applyTheme();
 
         themeToggle.addEventListener('click', function () {
@@ -95,7 +88,6 @@
           applyTheme();
         });
 
-        // Mobile menu functionality
         const headerNavbar = document.querySelector('.header__navbar');
         const mobileMenuButton = document.createElement('button');
         mobileMenuButton.id = 'mobile-menu-button';
@@ -119,7 +111,6 @@
           document.body.classList.toggle('menu-open');
         });
 
-        // Close mobile menu when clicking outside
         document.addEventListener('click', function (event) {
           if (
             window.innerWidth <= 768 &&
@@ -132,7 +123,6 @@
           }
         });
 
-        // Close mobile menu when clicking on a link
         document.querySelectorAll('.header__navbar a').forEach((link) => {
           link.addEventListener('click', function () {
             if (window.innerWidth <= 768) {
@@ -142,7 +132,6 @@
           });
         });
 
-        // Responsive check
         function checkResponsive() {
           if (window.innerWidth <= 768) {
             mobileMenuButton.style.display = 'block';
@@ -334,10 +323,10 @@
       <div class="page__content1">
         <div class="container">
           <div class="banner">
-            <div class="banner__padding">
-              <div class="banner2">
-                <div class="banner1">
-                  <span class="banner4">SERVICE SINGLE</span>
+            <div class="banner__align">
+              <div class="banner__padding">
+                <div class="banner__radius">
+                  <span class="banner-text">SERVICE SINGLE</span>
                 </div>
                 <h1 class="banner3">Service Details</h1>
               </div>
@@ -349,8 +338,8 @@
         <div class="container">
           <div class="services">
             <div class="services__text">
-              <div class="servicies__text-title">
-                <div class="servicies__text-title-title">
+              <div class="services__text-title">
+                <div class="services__text-title-width">
                   <svg width="106" height="72" viewBox="0 0 106 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="65.5023" cy="27.3834" r="23.7884" fill="#DADADA" />
                     <path
@@ -429,14 +418,14 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <h1 class="services__text1">Financial Projections</h1>
-                  <p class="services__text2">
+                  <h1 class="services__text-projections">Financial Projections</h1>
+                  <p class="services__text-projectionsinfo">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
                   </p>
                 </div>
-                <div class="servicies__text-title-navigation1">
+                <div class="services__text-title-navigation">
                   <button class="services__navbutton">
                     <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle
@@ -485,21 +474,21 @@
                     fill="#181818"
                   />
                 </svg>
-                <h2 class="services__text3">The Balance Sheet</h2>
-                <p class="services__text4">
+                <h2 class="services__text-balancesheet">The Balance Sheet</h2>
+                <p class="services__text-balancesheetinfo">
                   The Balance Sheet is a summary of the assets and liabilities and equity of a business at a specific
                   point of time.
                 </p>
               </div>
-              <div class="services__content-block--reversed">
+              <div class="services__content-block services__content-block--reversed">
                 <svg width="38" height="26" viewBox="0 0 38 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M35.2857 0H2.71429C1.99441 0 1.30402 0.274099 0.794996 0.761999C0.285968 1.2499 0 1.91163 0 2.60163V7.95122V23.3984C0 24.0884 0.285968 24.7501 0.794996 25.238C1.30402 25.7259 1.99441 26 2.71429 26H35.2857C36.0056 26 36.696 25.7259 37.205 25.238C37.714 24.7501 38 24.0884 38 23.3984V2.60163C38 1.91163 37.714 1.2499 37.205 0.761999C36.696 0.274099 36.0056 0 35.2857 0ZM20.3571 20.813H17.6429C17.2829 20.813 16.9377 20.676 16.6832 20.432C16.4287 20.1881 16.2857 19.8572 16.2857 19.5122C16.2857 19.1672 16.4287 18.8363 16.6832 18.5924C16.9377 18.3484 17.2829 18.2114 17.6429 18.2114H20.3571C20.7171 18.2114 21.0623 18.3484 21.3168 18.5924C21.5713 18.8363 21.7143 19.1672 21.7143 19.5122C21.7143 19.8572 21.5713 20.1881 21.3168 20.432C21.0623 20.676 20.7171 20.813 20.3571 20.813ZM31.2143 20.813H25.7857C25.4258 20.813 25.0806 20.676 24.8261 20.432C24.5716 20.1881 24.4286 19.8572 24.4286 19.5122C24.4286 19.1672 24.5716 18.8363 24.8261 18.5924C25.0806 18.3484 25.4258 18.2114 25.7857 18.2114H31.2143C31.5742 18.2114 31.9194 18.3484 32.1739 18.5924C32.4284 18.8363 32.5714 19.1672 32.5714 19.5122C32.5714 19.8572 32.4284 20.1881 32.1739 20.432C31.9194 20.676 31.5742 20.813 31.2143 20.813ZM2.71429 6.65041V2.60163H35.2857V6.65041H2.71429Z"
                     fill="#FFCC4A"
                   />
                 </svg>
-                <h2 class="services__text5">Income Statement</h2>
-                <p class="services__text6">
+                <h2 class="services__text-incomestatement">Income Statement</h2>
+                <p class="services__text-incomeinfo">
                   The Income (Profit and Loss) Statement, commonly referred to as the P&L statement, summarizes the
                   revenue and expenses for a specific time period (one month, one quarter, one year, etc.)
                 </p>
@@ -511,8 +500,8 @@
                     fill="#181818"
                   />
                 </svg>
-                <h2 class="services__text7">Financial Plan</h2>
-                <p class="services__text8">
+                <h2 class="services__text-financialplan">Financial Plan</h2>
+                <p class="services__text-information">
                   Keep your information current and review the documents on a regular basis (monthly or more often if
                   needed). Review them with key individuals within your company.
                 </p>
@@ -524,8 +513,8 @@
                     fill="#181818"
                   />
                 </svg>
-                <h2 class="services__text9">Financial Ratios</h2>
-                <p class="services__text10">
+                <h2 class="services__text-financialratios">Financial Ratios</h2>
+                <p class="services__text-ratios">
                   Ratios are useful when comparing your company with the competition on financial performance and also
                   when benchmarking the performance of your company.
                 </p>
@@ -540,10 +529,10 @@
             <img src="/images/content3_whattoexpect.svg" alt="Business meeting illustration" />
             <div class="whattoexpect2">
               <div class="whattoexpect__bg">
-                <span class="services__text11">WE'LL WORK WITH YOU</span>
+                <span class="services__text-header">WE'LL WORK WITH YOU</span>
               </div>
-              <h2 class="services__text12">What To Expect</h2>
-              <p class="services__text13">
+              <h2 class="services__text-name">What To Expect</h2>
+              <p class="services__text-story">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.
@@ -565,7 +554,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-                <p class="services__text14">
+                <p class="services__text-points">
                   Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day.
                 </p>
               </div>
@@ -586,7 +575,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-                <p class="services__text14">
+                <p class="services__text-points">
                   Capitalize on low hanging fruit to identify a ballpark value added activity to beta test override the
                   digital.
                 </p>
@@ -663,12 +652,12 @@
             </div>
           </div>
           <div class="faq">
-            <div class="faq__padding">
-              <div class="faq__padding1">
-                <div class="faq__text1">
-                  <span class="faq__text11">FAQ</span>
+            <div class="faq__padding-width">
+              <div class="faq__padding-align">
+                <div class="faq__text-bg">
+                  <span class="faq__text-font">FAQ</span>
                 </div>
-                <h2 class="faq__text2">Customer Questions</h2>
+                <h2 class="faq__text-questions">Customer Questions</h2>
               </div>
 
               <div class="faq__block">
@@ -695,7 +684,7 @@
                   />
                 </svg>
               </div>
-              <div class="faq__block-text2">
+              <div class="faq__block-text-black">
                 Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on
                 excellent productivity, customer satisfaction, respect for team and individual achievements.
               </div>
