@@ -30,6 +30,7 @@
   --text-dark: #181818;
   
   /* Цвета компонентов */
+  --bg-banner-padding: rgba(255, 255, 255, 0.85);
   --bg-services-block: #EBEBEB;
   --bg-services-block-reversed: #181818;
   --bg-faq: #F5F5F5;

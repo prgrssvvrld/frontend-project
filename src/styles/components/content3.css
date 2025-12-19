@@ -1,0 +1,135 @@
+.page__content3 {
+  flex-grow: 1;
+  background: var(--bg-content3);
+  padding: 80px 0;
+}
+
+.whattoexpect {
+  display: flex;
+  align-items: center;
+  gap: 82px;
+  padding: 80px 0;
+  flex-wrap: wrap;
+}
+
+.whattoexpect__width {
+  flex: 1;
+  min-width: 300px;
+}
+
+.whattoexpect__bg {
+  border-radius: 20px;
+  padding: 0 12px;
+  background: var(--color-yellow-FFCC4A);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.whattoexpect__text-header {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.48;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.whattoexpect__text-name {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.16;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.whattoexpect__text-story {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.48;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+.whattoexpect__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.whattoexpect__text-points {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.16;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.clientlogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 0 60px 56px;
+  opacity: 0.51;
+}
+
+.clientlogos img {
+  max-width: 150px;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .whattoexpect__text-name {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .whattoexpect {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .whattoexpect__row {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .clientlogos {
+    gap: 30px;
+    padding: 40px 20px;
+    justify-content: center;
+  }
+
+  .clientlogos img {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .whattoexpect__text-name {
+    font-size: 28px;
+  }
+
+  .whattoexpect__bg {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .whattoexpect__text-name {
+    font-size: 24px;
+  }
+
+  .clientlogos img {
+    max-width: 80px;
+  }
+}

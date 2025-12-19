@@ -1,0 +1,133 @@
+.page__header {
+  flex-shrink: 0;
+  background-color: var(--bg-header);
+  opacity: 0.91;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  position: relative;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.header__logo-text h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-white-FFFFFF);
+  margin: 0;
+}
+
+.header__navbar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__navbar-home,
+.header__navbar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s;
+  padding: 8px 0;
+}
+
+.header__navbar-home {
+  color: var(--color-green-5AB612);
+}
+
+.header__navbar-item {
+  color: var(--color-white-FFFFFF);
+}
+
+.header__navbar-home:hover,
+.header__navbar-item:hover {
+  color: var(--color-yellow-FFCC4A);
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  background: var(--color-white-FFFFFF);
+  color: var(--color-black-353535);
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 42px;
+  padding: 10px 41px 8px 8px;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.header__phone:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header__phone svg {
+  flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+  .header__phone span {
+    display: none;
+  }
+
+  .header__phone {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #mobile-menu-button {
+    display: block !important;
+  }
+
+  .header__navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg-header);
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1000;
+    display: none;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .header__navbar.mobile-menu-open {
+    display: flex;
+  }
+
+  .header__navbar-home,
+  .header__navbar-item {
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .header {
+    padding: 20px 0;
+  }
+
+  .header__logo-text h1 {
+    font-size: 24px;
+  }
+}

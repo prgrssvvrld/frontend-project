@@ -1,0 +1,252 @@
+.page__content5 {
+  flex-grow: 1;
+  background: var(--bg-content5);
+  padding: 80px 0 155px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 69px;
+  padding: 197px 0 147px;
+  flex-wrap: wrap;
+}
+
+.contact__data {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact__data-text {
+  margin-bottom: 56px;
+}
+
+.contact__data-text-bg {
+  border-radius: 20px;
+  padding: 0 12px;
+  background: var(--color-yellow-FFCC4A);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.contact__data-text-bg span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.48;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.contact__data-info-content-header {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.16;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.contact__data-info-content-frameworks {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.48;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+}
+
+.contact__data-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.contact__data-info:last-child {
+  margin-bottom: 0;
+}
+
+.contact__data-info-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.contact__data-info-content-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.48;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.contact__data-info-content-text {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.16;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.contact__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.faq {
+  background: var(--bg-faq);
+  border-radius: 30px;
+  padding: 151px 236px;
+  margin: 0 auto;
+  max-width: 1197px;
+}
+
+.faq__padding-width {
+  max-width: 725px;
+  margin: 0 auto;
+}
+
+.faq__padding-align {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq__text-bg {
+  background: var(--color-green-4EAF4E);
+  border-radius: 20px;
+  padding: 0 19px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.faq__text-font {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.48;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.faq__text-questions {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.16;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.faq__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--border-faq);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.faq__block:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.faq__block-text {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.16;
+  color: var(--text-primary);
+  flex: 1;
+  margin: 0;
+}
+
+.faq__block-text-black {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.48;
+  color: var(--text-secondary);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-faq);
+  margin: 0 0 20px;
+}
+
+.faq__block svg {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1200px) {
+  .faq {
+    padding: 100px 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  .services__text-projections,
+  .whattoexpect__text-name,
+  .video__title-text,
+  .contact__data-info-content-header,
+  .faq__text-questions {
+    font-size: 36px;
+  }
+
+  .faq {
+    padding: 80px 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  .contact__data-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .faq {
+    padding: 60px 30px;
+    border-radius: 20px;
+  }
+
+  .faq__block {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .faq__block-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact__data-info-content-header,
+  .faq__text-questions {
+    font-size: 28px;
+  }
+
+  .banner__radius,
+  .whattoexpect__bg,
+  .contact__data-text-bg {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact__data-info-content-header,
+  .faq__text-questions {
+    font-size: 24px;
+  }
+}

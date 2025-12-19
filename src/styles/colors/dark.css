@@ -15,7 +15,7 @@
   
   /* Цвета фона */
   --bg-page: #121212;
-  --bg-content1: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/Content1_background2.svg');
+  --bg-content1: url('images/Content1_background2.svg');
   --bg-content2: #1A1A1A;
   --bg-content3: #121212;
   --bg-content4: #000000;
@@ -30,6 +30,7 @@
   --text-dark: #121212;
   
   /* Цвета компонентов */
+  --bg-banner-padding: rgba(30, 30, 30, 0.85);
   --bg-services-block: #2D2D2D;
   --bg-services-block-reversed: #000000;
   --bg-faq: #1A1A1A;
@@ -52,6 +53,7 @@ body {
   background: var(--bg-content1);
   background-size: cover;
   background-repeat: no-repeat;
+  filter: none !important;
 }
 
 [data-theme="dark"] .page__footer {
@@ -60,13 +62,13 @@ body {
   background-repeat: no-repeat;
 }
 
-[data-theme="dark"] .banner2 {
-  background: rgba(30, 30, 30, 0.85);
-  color: var(--text-primary);
-}
 
 [data-theme="dark"] .services__content-block {
   background: var(--bg-services-block);
+}
+
+[data-theme="dark"] .clientlogos img {
+  filter: invert(1) hue-rotate(180deg);
 }
 
 [data-theme="dark"] .services__content-block--reversed {

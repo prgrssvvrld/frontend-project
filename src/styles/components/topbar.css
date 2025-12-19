@@ -1,0 +1,65 @@
+.page__topbar {
+  flex-shrink: 0;
+  background-color: var(--color-black-181818);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.topbar__icon {
+  display: flex;
+  align-items: center;
+}
+
+.topbar__text span {
+  font-size: 0.875rem;
+  color: var(--color-white-FFFFFF);
+  font-weight: 400;
+}
+
+.topbar__group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topbar__social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topbar__follow {
+  display: flex;
+  align-items: center;
+  color: var(--color-white-FFFFFF);
+  transition: color 0.3s;
+}
+
+.topbar__follow:hover {
+  color: var(--color-yellow-FFCC4A);
+}
+
+.topbar__follow svg {
+  width: 19px;
+  height: 19px;
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .topbar__group {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

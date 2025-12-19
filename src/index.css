@@ -3,4 +3,12 @@
 @import './styles/normalize.css';
 @import './styles/global/utility.css';
 @import './styles/components/container.css';
-@import './styles/components/page.css';
+@import './styles/components/base.css';
+@import './styles/components/topbar.css';
+@import './styles/components/header.css';
+@import './styles/components/content1.css';
+@import './styles/components/content2.css';
+@import './styles/components/content3.css';
+@import './styles/components/content4.css';
+@import './styles/components/content5.css';
+@import './styles/components/footer.css';
